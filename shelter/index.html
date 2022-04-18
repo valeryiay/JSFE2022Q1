@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/shelter/pages/main/style.css">
+    <link rel="stylesheet" href="/shelter/style.css">
+    <link rel="shortcut icon" href="/shelter/assets/images/pet-house.png" type="image/x-icon">
+
     <title>Shelter</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
                     <nav class="header-nav-menu">
                         <ul class="header-nav-list">
                             <li><a href="#" class="header-link link-linked">About the shelter</a></li>
-                            <li><a href="/shelter/pages/pets/index.html" class="header-link">Our pets</a></li>
+                            <li><a href="/shelter/pets.html" class="header-link">Our pets</a></li>
                             <li><a href="#help" class="header-link">Help the shelter</a></li>
                             <li><a href="#footer" class="header-link">Contacts</a></li>
                         </ul>
@@ -27,7 +29,7 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="page">
             <section class="screen">
                 <div class="start-screen container">
                     <div class="start-screen-body">
@@ -39,7 +41,7 @@
                             than anybody else in the world, you will see!</p>
                         </div>
                         <div class="start-screen-btn">
-                            <a href="#friends" class="btn-primary">Make a friend</a>
+                            <a href="#our-friends" class="btn-primary">Make a friend</a>
                         </div>
                     </div>
                     <div class="start-screen-item">
@@ -61,20 +63,62 @@
                     ever leave them alone.</p>
                 </div>
             </section>
+            <section class="our-friends" id="our-friends">
+                <div class="our-friends-body container">
+                    <div class="our-friends-title">
+                        <h2 class="title">Our friends who <br>are looking for a house</h2>
+                    </div>
+                    <div class="our-friends-slider">
+                        <div class="our-friends-arrow-left _icon-arrow-left" data-arrow ="true"></div>
+                        <div class="our-friends-arrow-right _icon-arrow-right" data-arrow="true"></div>
+                    </div>
+                    <div class="our-friends-btn-body">
+                        <a href="/shelter/pets.html" class="btn-primary our-friends-btn">Get to know the rest</a>
+                    </div>
+                </div>
+            </section>
+            
+
+
         </main>
-        <section class="friends" id="friends"></section>
+
         <section class="help" id="help"></section>
-        <footer class="footer" id="footer"></footer>
+        <footer class="footer" id="footer">
+            <div class="footer-body container">
+                <div class="footer-item item1">
+                    <h3 class="footer-title">For questions and suggestions</h3>
+                    <div class="footer-text-body footer-text">
+                        <a href="mailto:email@shelter.com" class="footer-tab"><img src="/shelter/assets/icons/icon-email.svg"
+                                alt="email"></a>
+                        <a href="mailto:email@shelter.com" class="footer-link">email@shelter.com</a>
+                    </div>
+                    <div class="footer-text">
+                        <a href="tel:+13 674 567 75 54" class="footer-tab"><img src="/shelter/assets/icons/icon-phone.svg" alt="phone"></a>
+                        <a href="tel:+13 674 567 75 54" class="footer-link phone">+13 674 567 75 54</a>
+                    </div>
+                </div>
+                <div class="footer-item item2">
+                    <h3 class="footer-title">We are waiting for your visit</h3>
+                    <div class="footer-text-body footer-text footer-text-location">
+                        <a href="https://goo.gl/maps/NcKE1dECb5VcxQsS8"
+                            target="_blank" class="footer-tab"><img src="/shelter/assets/icons/icon-marker.svg" alt="marker"></a>
+                        <a href="https://goo.gl/maps/NcKE1dECb5VcxQsS8"
+                            target="_blank">1 Central Street, Boston (entrance from the store)</a>
+                    </div>
+                    <div class="footer-text footer-text-location">
+                        <a href="https://goo.gl/maps/eamdNRHEKLdYrrsa9"
+                            target="_blank" class="footer-tab"><img src="/shelter/assets/icons/icon-marker.svg" alt="marker"></a>
+                        <a href="https://goo.gl/maps/eamdNRHEKLdYrrsa9"
+                            target="_blank" class="footer-link">18 South Park, London</a>
+                    </div>
+                </div>
+                <div class="footer-img">
+                    <img src="/shelter/assets/images/footer-puppy.png" alt="footer-puppy">
+                </div>
+            </div>
+        </footer>
 
     </div>
-
-
-
-
-
-
-
-
     <script src="/shelter/pages/main/script.js"></script>
 </body>
 </html>
