@@ -2,7 +2,7 @@
 @font-face {
   font-family: "icon";
   font-display: swap;
-  src: url("/shelter/assets/fonts/icon.woff") format("woff"), url("/shelter/assets/fonts/icon.woff2#icon") format("woff2");
+  src: url("/assets/fonts/icon.woff") format("woff"), url("/assets/fonts/icon.woff2#icon") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -400,7 +400,7 @@ body.lock {
 
 .footer {
   padding-top: 56px;
-  background: url(/shelter/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url(/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 @media (max-width: 470px) {
   .footer {
@@ -879,7 +879,7 @@ body.lock {
 }
 
 .screen {
-  background: url(/shelter/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url(/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .page-shadow.active {
