@@ -84,6 +84,10 @@ body {
   color: #000;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -196,3 +200,114 @@ body {
   border-bottom: 3px solid #F1CDB3;
   color: #FFFFFF;
 }
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.screen {
+  background: url(/shelter/assets/images/noise_transparent@2x.png) repeat 0 0, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.start-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start-screen-body {
+  padding: 343px 42px 0 0;
+}
+
+.start-screen-body *:not(:last-child) {
+  margin-bottom: 42px;
+}
+
+.start-screen-title {
+  max-width: 310px;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.start-screen-text {
+  max-width: 460px;
+  color: #CDCDCD;
+  line-height: 160%;
+}
+
+.start-screen-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+
+.btn-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 52px;
+  min-width: 207px;
+  background: #F1CDB3;
+  border-radius: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Georgia';
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.btn-primary:hover {
+  background: #FDDCC4;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 52px;
+  min-width: 187px;
+  border: 2px solid #F1CDB3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+}
+
+.btn-border:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+
+
+.start-screen-item {
+  padding-top: 180px;
+}
+
+
