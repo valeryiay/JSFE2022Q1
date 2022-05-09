@@ -1,5 +1,4 @@
-//обернем нативные методы
-
+/* eslint-disable import/prefer-default-export */
 export function set(name, value) {
     window.localStorage.setItem(name, JSON.stringify(value));
 }

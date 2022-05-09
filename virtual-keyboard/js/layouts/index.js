@@ -1,6 +1,7 @@
-import en from './en.js'
-import ru from './ru.js'
+/* eslint-disable import/extensions */
+import ru from '.js/layouts/ru.js';
+import en from '.js/layouts/en.js';
 
-export default { en, ru };
+export default { ru, en };
 
 

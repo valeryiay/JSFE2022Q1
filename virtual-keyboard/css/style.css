@@ -1,3 +1,113 @@
+
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    display: block;
+    font-size: 16px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.wrapper {
+    max-width: 816px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    height: 30vh;
+    font-size: 20px;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+.keyboard {
+    width: 100%;
+    margin-top: 30px;
+    max-width: 816px;
+    padding: 10px 8px 8px;
+    margin: 30px auto;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.keyboard__key {
+    position: relative;
+    width: 5%;
+    max-width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: inset 2px 2px 2px 0px rgb(255 255 255 / 50%), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.keyboard__key:active {
+    background-color: rgba(255,151, 0, 0.2);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.keyboard__key_wide {
+    width: 8%;
+    max-width: 75px;
+}
+
+.keyboard__key_middle-wide {
+    width: 15%;
+    max-width: 150px;
+}
+
+.keyboard__key_ultra-wide {
+    width: 33%;
+    max-width: 334px;
+}
+
+@media (hover: hover) {
+    .keyboard__key:hover {
+        background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%)
+    }
+}
+
+.active {
+    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.shift {
+    text-transform: uppercase;
+}
+
+.always-shift {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.always-shift::after {
+    font-size: 18px;
+    content: '^';
 }

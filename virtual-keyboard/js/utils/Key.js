@@ -1,4 +1,6 @@
-import create from './utils/create.js';
+/* eslint-disable import/extensions */
+
+import create from '.js/utils/create.js';
 
 export default class Key {
 constructor( {small, code, shift} ) {
