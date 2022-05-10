@@ -1,0 +1,22 @@
+{
+  "name": "valeryiay-jsfe2022q1",
+  "version": "1.0.0",
+  "description": "Private repository for @valeryiay\r https://rolling-scopes-school.github.io/valeryiay-JSFE2022Q1/virtual-keyboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/valeryiay-JSFE2022Q1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/valeryiay-JSFE2022Q1/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/valeryiay-JSFE2022Q1#readme",
+  "devDependencies": {
+    "eslint": "^8.15.0"
+  }
+}
