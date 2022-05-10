@@ -8,7 +8,7 @@ import Key from './Key.js';
 
 const main = create('main', '',
   [create('h1', 'title', 'Virtual Keyboard'),
-    create('h3', 'subtitle', 'The virtual keyboard was created in Windows OS. To switch the language press Left Shift+Alt'),
+    create('h3', 'subtitle', 'The virtual keyboard was created in Windows OS. To switch the language press Left Ctrl+Alt'),
     ]);
 
 export default class Keyboard {
