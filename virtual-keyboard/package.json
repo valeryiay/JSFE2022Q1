@@ -1,22 +1,20 @@
 {
-  "name": "valeryiay-jsfe2022q1",
+  "name": "virtual-keyboard",
   "version": "1.0.0",
-  "description": "Private repository for @valeryiay\r https://rolling-scopes-school.github.io/valeryiay-JSFE2022Q1/virtual-keyboard",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint Key.js",
+    "lint": "eslint . --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rolling-scopes-school/valeryiay-JSFE2022Q1.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rolling-scopes-school/valeryiay-JSFE2022Q1/issues"
-  },
-  "homepage": "https://github.com/rolling-scopes-school/valeryiay-JSFE2022Q1#readme",
   "devDependencies": {
-    "eslint": "^8.15.0"
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.20.2"
   }
 }
+
