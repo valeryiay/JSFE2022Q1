@@ -6,10 +6,13 @@ import create from './utils/create.js';
 import language from './layouts/index.js';
 import Key from './Key.js';
 
-const main = create('main', '',
+const main = create(
+  'main',
+  '',
   [create('h1', 'title', 'Virtual Keyboard'),
     create('h3', 'subtitle', 'The virtual keyboard was created in Windows OS. To switch the language press Left Ctrl+Alt'),
-    ]);
+  ],
+);
 
 export default class Keyboard {
   constructor(rowsOrder) {
@@ -20,12 +23,17 @@ export default class Keyboard {
 
   init(code) {
     this.keyBase = language[code];
-    this.output = create('textarea', 'output', null, main,
+    this.output = create(
+      'textarea',
+      'output',
+      null,
+      main,
       ['placeholder', 'Type...'],
       ['rows', 5],
       ['cols', 50],
       ['spellcheck', false],
-      ['autocorrect', 'off']);
+      ['autocorrect', 'off'],
+    );
     this.container = create('div', 'keyboard', null, main, ['language', code]);
     document.body.prepend(main);
     return this;
@@ -67,7 +75,7 @@ export default class Keyboard {
         this.switchUpperCase(false, true);
       }
     }
-  }
+  };
 
   resetPressedButtons = (targetCode) => {
     const pressed = Object.keys(this.keysPressed);
@@ -83,7 +91,7 @@ export default class Keyboard {
         delete this.keysPressed[code];
       }
     });
-  }
+  };
 
   handleKeyDownEvent = (e) => {
     const { code, ctrlKey, shiftKey } = e;
@@ -110,23 +118,25 @@ export default class Keyboard {
       const regexp = /Tab|ArrowLeft|ArrowUp|ArrowDown|ArrowRight|Delete|Backspace|Enter/i;
       if ((!keyObj.isFnKey && !ctrlKey) || keyObj.code.match(/Tab|Alt/) || (!e.type && keyObj.code.match(regexp))) {
         if (e.type) e.preventDefault();
-        this.fireKeyPress(keyObj,
+        this.fireKeyPress(
+          keyObj,
           ((shiftKey && !this.isCaps)
           || (this.shiftKey && !this.isCaps)
           || ((shiftKey || this.shiftKey) && this.isCaps && keyObj.sub.innerText)
           || (this.isCaps && !keyObj.sub.innerText)
           || (this.isCaps && (this.shiftKey || shiftKey) && keyObj.sub.innerText))
-            ? keyObj.shift : keyObj.small);
+            ? keyObj.shift : keyObj.small,
+        );
       }
       keyObj.div.classList.add('active');
       this.keysPressed[keyObj.code] = keyObj;
       if (!e.type) keyObj.div.addEventListener('mouseleave', this.resetButtonState, { once: true });
     }
-  }
+  };
 
   resetButtonState = (e) => {
     this.resetPressedButtons(e.target.dataset.code);
-  }
+  };
 
   switchLanguage = () => {
     const langAbbr = Object.keys(language);
@@ -151,7 +161,7 @@ export default class Keyboard {
       if (!button.isFnKey) button.letter.classList.toggle('changed');
     });
     if (this.isCaps) this.switchUpperCase(true);
-  }
+  };
 
   switchUpperCase(isTrue, isShiftKey) {
     if (isTrue) {
@@ -202,7 +212,7 @@ export default class Keyboard {
       this.handleKeyDownEvent({ code });
     }
     this.output.focus();
-  }
+  };
 
   fireKeyPress(keyObj, symbol) {
     let cursorPos = this.output.selectionStart;

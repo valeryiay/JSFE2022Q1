@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint Key.js",
+    "lint": "eslint create.js",
     "lint": "eslint . --fix"
   },
   "keywords": [],
