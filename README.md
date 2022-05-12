@@ -1,3 +1,3 @@
 # valeryiay-JSFE2022Q1
 Private repository for @valeryiay
-https://rolling-scopes-school.github.io/valeryiay-JSFE2022Q1/shelter
+https://valeryiay.github.io/JSFE2022Q1/virtual-keyboard/
